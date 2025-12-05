@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-
 export const Route = createFileRoute("/")({ component: App });
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
 					Create adorable
 					<span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
 						{" "}
-						Pikura photos{" "}
+						Purikura photos{" "}
 					</span>
 					that sparkle ✨
 				</h1>
@@ -35,8 +34,7 @@ function App() {
 					}}
 				>
 					Snap selfies, decorate with cute stickers, kawaii filters, and fun
-					text — optimized with ImageKit for fast sharing and crystal-clear
-					prints!
+					text
 				</p>
 
 				{/* Buttons */}
