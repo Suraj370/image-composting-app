@@ -1,22 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-	Route as RouteIcon,
-	Server,
-	Shield,
-	Sparkles,
-	Waves,
-	Zap,
-} from "lucide-react";
+
 
 export const Route = createFileRoute("/")({ component: App });
 
 function App() {
 	return (
 		<div className="flex flex-col min-h-[calc(100vh-4rem)] bg-pink-100 text-gray-900">
-			<main
-				className="flex-1 flex flex-col items-center justify-center text-center px-4"
-				role="main"
-			>
+			<main className="flex-1 flex flex-col items-center justify-center text-center px-4">
 				{/* Subtitle */}
 				<p className="text-sm font-medium text-pink-600 mb-2">
 					Japanese Photo Booth Magic 🎀
@@ -52,14 +42,14 @@ function App() {
 				{/* Buttons */}
 				<div className="mt-8 flex flex-col sm:flex-row gap-4">
 					<Link
-						href="/editor"
+						to="/editor"
 						className="px-7 py-3 rounded-full text-sm font-semibold
         bg-gradient-to-r from-pink-500 to-purple-500 
         text-white shadow-lg shadow-pink-300/50
         hover:opacity-90 active:scale-[0.98]
         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-400 focus-visible:ring-offset-2"
 					>
-						Try the Photo Booth 💖
+						Launch the Photo Booth 💖
 					</Link>
 				</div>
 
